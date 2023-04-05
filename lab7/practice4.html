@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table Generator</title>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+
+    <form method="get" action="multiplication.php">
+        <label for="number">Enter a number:</label>
+        <input type="number" name="number" id="number" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    <?php
+        if (isset($_GET["number"])) {
+            include("multiplication.php");
+        }
+    ?>
+</body>
+</html>
+
